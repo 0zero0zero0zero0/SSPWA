@@ -66,9 +66,10 @@ SSPWA transforms web applications into cinematic experiences:
 - **11**: Holistic Integration
 ### Brand Identity
 #### Visual Language
-- **Primary**: `rgba(0,0,0,1)` — Depth of Possibility
-- **Secondary**: `rgba(255,255,255,1)` — Clarity of Purpose
-- **Interaction**: `rgba(0,0,0,.9)` — Subtle Movement
+- **Primary**: `hsla(215,100%,45%,1)` – Depth of Possibility
+- **Secondary**: `hsla(0,0%,100%,1)` or `hsla(0,0%,0%,1)` – Clarity of Purpose
+- **Interaction**: `hsla(0,0%,0%,.9)` – Subtle Movement
+- **Borders**: `hsla(0,0%,100%,.95)` or `hsla(0,0%,0%,.95)` – Precise Focus
 #### Key Messaging
 - Consistent Experience On All Devices
 - No Scrolling Pure Interaction
@@ -157,17 +158,17 @@ SSPWA transforms web applications into cinematic experiences:
    html,body,#A{display:flex;flex-wrap:wrap;width:100%;height:100%;overflow:hidden;box-sizing:border-box;margin:0;padding:0;background:hsla(0,0%,0%,1);color:hsla(0,0%,100%,1);font-size:25px;line-height:25px;cursor:default;}
    north{display:flex;justify-content:center;align-items:center;width:100%;height:50px;}
    west{display:flex;justify-content:center;align-items:center;width:50px;height:calc(100% - 100px);}
-   main{display:flex;width:calc(100% - 100px);height:calc(100% - 100px);overflow:hidden;box-sizing:border-box;margin:0;padding:0;border:2px solid hsla(0,0%,100%,.1);}
+   main{display:flex;width:calc(100% - 100px);height:calc(100% - 100px);overflow:hidden;box-sizing:border-box;margin:0;padding:0;border:2px solid hsla(0,0%,0%,.95);}
    east{display:flex;justify-content:center;align-items:center;width:50px;height:calc(100% - 100px);}
    south{display:flex;justify-content:center;align-items:center;width:100%;height:50px;}
-   north:hover,west:hover,east:hover,south:hover{background:hsla(0,0%,100%,.1);}
+   north:hover,west:hover,east:hover,south:hover{background:hsla(0,0%,0%,.9);}
    h1,h2,h3,p,ol,ul,li{display:flex;width:100%;overflow:hidden;box-sizing:border-box;margin:5px 0;padding:0;}
    h1{font-size:32px;line-height:35px;}
    h2{font-size:27px;line-height:30px;}
    h3{font-size:25px;line-height:28px;}
    ol,ul{flex-direction:column;}
    p,li{font-size:20px;line-height:22px;}
-   button{display:flex;justify-content:center;align-items:center;height:45px;overflow:hidden;box-sizing:border-box;margin:0;padding:10px;background:none;border:2px solid hsla(0,0%,100%,1);border-radius:5px;color:hsla(0,0%,100%,1);font-size:25px;line-height:25px;}
+   button{display:flex;justify-content:center;align-items:center;height:45px;overflow:hidden;box-sizing:border-box;margin:0;padding:10px;background:none;border:2px solid hsla(0,0%,100%,.95);border-radius:5px;color:hsla(0,0%,100%,1);font-size:25px;line-height:25px;}
    button:hover{background:hsla(0,0%,100%,.9);color:hsla(0,0%,0%,1);}
    button:disabled{background:none;border:none;color:hsla(0,0%,0%,1);}
    @media(max-width:750px){
@@ -177,14 +178,15 @@ SSPWA transforms web applications into cinematic experiences:
     p,li{font-size:16px;line-height:17px;}
     button{height:35px;font-size:16px;line-height:17px;}
    }
-   h1{display:flex;justify-content:center;align-items:center;width:100%;height:100%;overflow:hidden;box-sizing:border-box;margin:0;padding:10px;background:hsla(215,100%,45%,1);color:hsla(0,0%,100%,1);text-align:center;}
+   .title{display:flex;align-items:center;width:100%;height:100%;overflow:hidden;box-sizing:border-box;margin:0;padding:10px;background:hsla(215,100%,45%,1);color:hsla(0,0%,100%,1);}
+   .title h1{justify-content:center;text-align:center;}
   </style>
  </head>
  <body>
   <div id="A">
    <north role="navigation">η</north>
    <west role="navigation">ψ</west>
-   <main role="main"><h1>Single Screen Progressive Web App</h1></main>
+   <main role="main"><div class="title"><h1>Single Screen Progressive Web App</h1></div></main>
    <east role="navigation">φ</east>
    <south role="navigation">∫</south>
   </div>
