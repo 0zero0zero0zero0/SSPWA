@@ -154,7 +154,7 @@ SSPWA transforms web applications into cinematic experiences:
   <link rel="icon" href="favicon.svg">
   <title>SSPWA</title>
   <style>
-   html,body,#A{display:flex;flex-wrap:wrap;width:100%;height:100%;overflow:hidden;box-sizing:border-box;margin:0;padding:0;background:hsla(215,100%,45%,1);color:hsla(0,0%,100%,1);font-size:25px;line-height:25px;cursor:default;}
+   html,body,#A{display:flex;flex-wrap:wrap;width:100%;height:100%;overflow:hidden;box-sizing:border-box;margin:0;padding:0;background:hsla(0,0%,0%,1);color:hsla(0,0%,100%,1);font-size:25px;line-height:25px;cursor:default;}
    north{display:flex;justify-content:center;align-items:center;width:100%;height:50px;}
    west{display:flex;justify-content:center;align-items:center;width:50px;height:calc(100% - 100px);}
    main{display:flex;width:calc(100% - 100px);height:calc(100% - 100px);overflow:hidden;box-sizing:border-box;margin:0;padding:0;border:2px solid hsla(0,0%,100%,.1);}
@@ -167,9 +167,9 @@ SSPWA transforms web applications into cinematic experiences:
    h3{font-size:25px;line-height:28px;}
    ol,ul{flex-direction:column;}
    p,li{font-size:20px;line-height:22px;}
-   button{display:flex;justify-content:center;align-items:center;height:45px;overflow:hidden;box-sizing:border-box;margin:0;padding:10px;background:none;border:2px solid rgba(255,255,255,1);border-radius:5px;color:rgba(255,255,255,1);font-size:25px;line-height:25px;}
-   button:hover{background:rgba(255,255,255,.9);color:rgba(0,0,0,1);}
-   button:disabled{background:none;border:none;color:rgba(0,0,0,0);}
+   button{display:flex;justify-content:center;align-items:center;height:45px;overflow:hidden;box-sizing:border-box;margin:0;padding:10px;background:none;border:2px solid hsla(0,0%,100%,1);border-radius:5px;color:hsla(0,0%,100%,1);font-size:25px;line-height:25px;}
+   button:hover{background:hsla(0,0%,100%,.9);color:hsla(0,0%,0%,1);}
+   button:disabled{background:none;border:none;color:hsla(0,0%,0%,1);}
    @media(max-width:750px){
     h1{font-size:25px;line-height:28px;}
     h2{font-size:23px;line-height:25px;}
