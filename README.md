@@ -177,7 +177,7 @@ SSPWA transforms web applications into cinematic experiences:
     p,li{font-size:16px;line-height:17px;}
     button{height:35px;font-size:16px;line-height:17px;}
    }
-   h1{display:flex;justify-content:center;align-items:center;width:100%;height:100%;background:hsla(215,100%,45%,1);color:hsla(0,0%,100%,1);}
+   h1{display:flex;justify-content:center;align-items:center;width:100%;height:100%;overflow:hidden;box-sizing:border-box;margin:0;padding:10px;background:hsla(215,100%,45%,1);color:hsla(0,0%,100%,1);}
   </style>
  </head>
  <body>
